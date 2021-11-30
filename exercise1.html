@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href = "myStyle.css"
+	rel="stylesheet"
+	type="text/css"/>
+	</head>
+
+
+<?php
+	echo "<table>";
+	echo "<tr>";
+	for($i=0;$i<100;$i++)
+	{
+		if($i==0)
+		{
+			echo "<td> </td>";
+		}
+		else
+		{
+		echo "<td>" . $i . "</td>";
+		}
+	}
+	echo "</tr>"; 
+	for($i=1;$i<101;$i++)
+	{	echo "<tr>";
+		echo "<td>" . $i . "</td>";
+		for($j=1;$j<101;$j++)
+		{
+			echo "<td>" . $i*$j . "</td>";
+		}
+		echo "</tr>";
+	}
+	echo "</table>";
+	
+?>
+
+</html>
+
